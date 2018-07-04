@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+<h1>Hello, World!</h1>
+
+<ul>
+	@foreach (var item in Model.Projects)
+	{
+	<li>
+		<h2>@item.Name</h2>
+		<p>@item.Description</p>
+	</li>
+	}
+</ul>
